@@ -1,9 +1,9 @@
 set talk off
 clear
-use persoana.dbf in 2
-use fisa.dbf in 2 alias fi
+use Persoana.dbf in 2
+use Fisa_note.dbf in 2 alias fi
 select 1
-set relation to CNP into fi
+set relation to Cod_student into fi
 use diagnostice.dbf in 3 alias di
 select 2
 set relation to Cod_diagnostic into di

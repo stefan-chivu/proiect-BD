@@ -1,4 +1,4 @@
-Project File generated 28/03/2021 18:18:09
+Project File generated 28/03/2021 19:09:46
 
 [Project]
 Name=
@@ -25,6 +25,7 @@ bdeoption=1
 Discipline.DBF,0,0,0, 
 Fisa_note.DBF,0,0,0, 
 Persoana.dbf,0,0,0, 
+prog.prg,0,0,0, 
 
 [DEO]
 
