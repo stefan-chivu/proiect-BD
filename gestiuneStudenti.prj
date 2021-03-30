@@ -1,4 +1,4 @@
-Project File generated 28/03/2021 16:03:20
+Project File generated 28/03/2021 19:10:27
 
 [Project]
 Name=
@@ -22,6 +22,10 @@ runtimeinbuild=0
 bdeoption=1
 
 [Contents]
+Discipline.DBF,0,0,0, 
+Fisa_note.DBF,0,0,0, 
+Persoana.dbf,0,0,0, 
+prog.prg,0,0,0, 
 
 [DEO]
 
@@ -46,14 +50,14 @@ XPLook=false
 dBaseBuild=2616
 dBaseVersion=1310
 SetupLang=en
-SepDestDir={app}
+SepDestDir=false
 BDEGroupEntries=false
 dBProgressbar=false
 dBProgressbox=false
 dBSilent=false
 dBDestRuntime=
 dBDestBDE=
-SourceFolder=
+SourceFolder=D:\Facultate\BD\Proiect
 InnoScriptname=
 LastDBVersion=1310
 LastDBLanguage=EN
@@ -110,3 +114,9 @@ UACRB=1
 CURRENTVSF=windows
 IMAGETOPRIGHT=
 IMAGESIDE=
+Icon1={group}\{#AppName} >> {app}\
+Files1=Discipline.DBF >> DestDir: {app}
+Files2=Discipline.mdx >> DestDir: {app}
+Files3=Fisa_note.DBF >> DestDir: {app}
+Files4=Fisa_note.mdx >> DestDir: {app}
+Files5=Persoana.dbf >> DestDir: {app}

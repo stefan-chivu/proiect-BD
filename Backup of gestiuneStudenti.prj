@@ -1,7 +1,7 @@
-Project File generated 28/03/2021 16:03:15
+Project File generated 28/03/2021 19:09:46
 
 [Project]
-Name=gestiuneStudenti
+Name=
 DefaultDir=.
 MainProjectFileName=
 Parameters=
@@ -10,7 +10,7 @@ Description=
 Preprocessor=
 LogFileName=
 PrefPathFormat=R
-TargetFileName=gestiuneStudenti.exe
+TargetFileName=
 IconFileName=
 SplashFileName=
 MostRecentSelectedFileName=
@@ -22,15 +22,19 @@ runtimeinbuild=0
 bdeoption=1
 
 [Contents]
+Discipline.DBF,0,0,0, 
+Fisa_note.DBF,0,0,0, 
+Persoana.dbf,0,0,0, 
+prog.prg,0,0,0, 
 
 [DEO]
 
 [INNO]
-ProjectExeFileName=D:\Facultate\BD\Proiect\gestiuneStudenti.exe
+ProjectExeFileName=
 ProjectMainFileName=
 ProjectdBaseVersion=dBASE 2019 13.10  b2616 (10/17/2019-EN191017)
 DefaultDirName={pf}\{#AppName}
-AppName=gestiuneStudenti
+AppName=
 AppVersion=1.0.0.0
 SM_dBASERuntime=false
 dBPlus=true
@@ -46,7 +50,7 @@ XPLook=false
 dBaseBuild=2616
 dBaseVersion=1310
 SetupLang=en
-SepDestDir={app}
+SepDestDir=false
 BDEGroupEntries=false
 dBProgressbar=false
 dBProgressbox=false
@@ -90,7 +94,7 @@ NLLicense=
 NLBefore=
 NLAfter=
 UninsHS=true
-UninsHSAppName=gestiuneStudenti
+UninsHSAppName=
 UninsHSAppId=
 UninsHSLanguages=All
 BDEUseSettings=false
@@ -103,10 +107,16 @@ INNOINI=false
 INIERRORHANDLING=false
 INITRAP=true
 ININOBDE=false
-INIAPPTHEMETYPE=0
-INIFULLTHEMENAME=0 - System
+INIAPPTHEMETYPE=4
+INIFULLTHEMENAME=4 - Office2 Blue
 INILARGEBUTTONS=true
 UACRB=1
 CURRENTVSF=windows
 IMAGETOPRIGHT=
 IMAGESIDE=
+Icon1={group}\{#AppName} >> {app}\
+Files1=Discipline.DBF >> DestDir: {app}
+Files2=Discipline.mdx >> DestDir: {app}
+Files3=Fisa_note.DBF >> DestDir: {app}
+Files4=Fisa_note.mdx >> DestDir: {app}
+Files5=Persoana.dbf >> DestDir: {app}
