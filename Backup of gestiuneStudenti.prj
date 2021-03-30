@@ -1,4 +1,4 @@
-Project File generated 28/03/2021 19:09:46
+Project File generated 30/03/2021 22:55:40
 
 [Project]
 Name=
@@ -26,6 +26,9 @@ Discipline.DBF,0,0,0,
 Fisa_note.DBF,0,0,0, 
 Persoana.dbf,0,0,0, 
 prog.prg,0,0,0, 
+C:\Users\stefa\Downloads\accept.prg,0,0,0, 
+prog2.prg,0,0,0, 
+getCredite.prg,0,0,0, 
 
 [DEO]
 

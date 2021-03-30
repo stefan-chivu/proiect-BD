@@ -1,78 +1,78 @@
 set talk off
 clear
-use Persoana.dbf in 2
-use Fisa_note.dbf in 2 alias fi
-select 1
-set relation to CNP into fi
-use diagnostice.dbf in 3 alias di
-select 2
-set relation to Cod_diagnostic into di
-select 1
+
+use persoana.dbf
+INDEX ON Cod_student TO icods
+
+use fisa_note.dbf
+//INDEX ON Cod_materie TO icodmf
+INDEX ON Cod_student TO icodsf
+
+use discipline.dbf
+INDEX ON Cod_materie TO icodm
+
+use persoana.dbf in 1 index icods alias per
+use fisa_note.dbf in 2 index icodsf alias fisa
+use discipline.dbf in 3 index icodm alias discip
+
+select per
+set relation to Cod_student into fisa
+
+select fisa
+set relation to Cod_materie into discip
+
+select per
 do while .T.
 clear
-text
-Programul afiseaza detaliile vizitelor unui pacient cu CNP dat
-endtext
 wait 'Incepeti d/n: ' to r
+
 do case
 case r='d'
-set order to 1
-c1='CNP pacient: '
-c2='CNP'
+c1='Cod student: '
+c2='Cod'
+
 case r='n'
 close all
 clear all
-return other
+return
+
+other 
 ?'Raspuns '+r+' invalid'
 wait
 loop
 endcase
+
 clear
-ch=(c1)
+ch=accept(c1)
 seek trim(ch)
 if eof()
-msgbox('Pacientul precizat prin CNP-ul '+ch+' nu exista',1)
+? 'Studentul nu exista'
 wait
 loop
 endif
-do while &c2=ch
+
+do while Cod_student=ch
 clear
-?'Pacientul: '+Nume+' '+Prenume
-?'CNP: '+CNP
+?'Studentul: '+Nume+' '+Prenume
+?'Cod student: '+str(Cod_student,10)
 if eof(2)
-?'Pacientul nu are fisa medicala'
+?'Studentul nu are note'
 else
-? fi->Data_consult
-?'Data consultatiei: '+dtoc(fi->Data_consult)
+do while not(eof(2))
+if Cod_student=ch
+? fisa->Nota
+endif
+skip 1 in 2
+enddo
 if eof(3)
-?'Pacientul nu are diagnostic'
+?'Studentul nu este inscris la nici o materie'
 else
-+? di->Cod_diagnostic, di->denumire
-?'Codul diagnosticului: '+di->Cod_diagnostic
-?'Denumire diagnostic: '+di->denumire
+? discip->Cod_materie,discip->Denumire
 endif
 endif
 ?
-wait 'Continuati:d/n' to r
+wait 'Continuati d/n: ' to r
 skip
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+enddo
+enddo
+return
