@@ -48,6 +48,8 @@ replace per->medie with suma_note/contor
 
 if per->medie>=8.5 and nr_credite>=25
 replace per->bursier with .T.
+else
+replace per->bursier with .F.
 endif
 
 skip 1 in 1

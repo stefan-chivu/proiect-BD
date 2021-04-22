@@ -1,4 +1,4 @@
-Project File generated 30/03/2021 22:55:40
+Project File generated 22/04/2021 19:30:34
 
 [Project]
 Name=
@@ -29,6 +29,8 @@ prog.prg,0,0,0,
 C:\Users\stefa\Downloads\accept.prg,0,0,0, 
 prog2.prg,0,0,0, 
 getCredite.prg,0,0,0, 
+prog3.prg,0,0,0, 
+interface.wfm,0,0,0, 
 
 [DEO]
 

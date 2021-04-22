@@ -1,0 +1,412 @@
+** END HEADER -- do not remove this line
+//
+// Generated on 22/04/2021
+//
+parameter bModal
+local f
+f = new InterfataForm()
+if (bModal)
+   f.mdi = false // ensure not MDI
+   f.readModal()
+else
+   f.open()
+endif
+
+class InterfataForm of FORM
+   with (this)
+      height = 34.5
+      left = 15.8571
+      top = 1.5909
+      width = 141.0
+      text = ""
+   endwith
+
+   this.TEXTLABEL1 = new TEXTLABEL(this)
+   with (this.TEXTLABEL1)
+      height = 1.5
+      left = 25.0
+      top = 1.0
+      width = 31.0
+      transparent = true
+      text = "Informatii student"
+      fontSize = 18.0
+      fontBold = true
+   endwith
+
+   this.TEXT1 = new TEXT(this)
+   with (this.TEXT1)
+      height = 1.5
+      left = 14.0
+      top = 3.0
+      width = 16.0
+      transparent = true
+      fontSize = 14.0
+      text = "Cod student:"
+   endwith
+
+   this.ENTRYFIELD1 = new ENTRYFIELD(this)
+   with (this.ENTRYFIELD1)
+      height = 1.5
+      left = 30.0
+      top = 3.0
+      width = 19.0
+      value = ""
+   endwith
+
+   this.PUSHBUTTON1 = new PUSHBUTTON(this)
+   with (this.PUSHBUTTON1)
+      onClick = class::PUSHBUTTON1_ONCLICK
+      height = 1.5
+      left = 29.0
+      top = 5.0
+      width = 21.0
+      text = "Afiseaza"
+      fontBold = true
+   endwith
+
+   this.LISTVIEW1 = new LISTVIEW(this)
+   with (this.LISTVIEW1)
+      height = 15.0
+      left = 74.0
+      top = 1.0
+      width = 54.0
+      tileWidth = 70
+   endwith
+
+   this.TEXT2 = new TEXT(this)
+   with (this.TEXT2)
+      height = 1.0
+      left = 7.0
+      top = 7.5
+      width = 7.0
+      text = "Nume:"
+   endwith
+
+   this.TEXT3 = new TEXT(this)
+   with (this.TEXT3)
+      height = 1.0
+      left = 27.0
+      top = 7.5
+      width = 9.0
+      text = "Prenume:"
+   endwith
+
+   this.TEXT4 = new TEXT(this)
+   with (this.TEXT4)
+      height = 1.0
+      left = 49.0
+      top = 7.5
+      width = 12.0
+      text = "Cod student:"
+   endwith
+
+   this.TEXTLABEL2 = new TEXTLABEL(this)
+   with (this.TEXTLABEL2)
+      height = 1.5
+      left = 25.0
+      top = 17.0
+      width = 31.0
+      transparent = true
+      text = "Informatii materie"
+      fontSize = 18.0
+      fontBold = true
+   endwith
+
+   this.TEXT5 = new TEXT(this)
+   with (this.TEXT5)
+      height = 1.5
+      left = 14.0
+      top = 18.5
+      width = 16.0
+      transparent = true
+      fontSize = 14.0
+      text = "Cod materie:"
+   endwith
+
+   this.ENTRYFIELD5 = new ENTRYFIELD(this)
+   with (this.ENTRYFIELD5)
+      height = 1.5
+      left = 30.0
+      top = 18.5
+      width = 19.0
+      value = ""
+   endwith
+
+   this.PUSHBUTTON2 = new PUSHBUTTON(this)
+   with (this.PUSHBUTTON2)
+      onClick = class::PUSHBUTTON2_ONCLICK1
+      height = 1.5
+      left = 28.0
+      top = 20.5
+      width = 21.0
+      text = "Afiseaza"
+      fontBold = true
+   endwith
+
+   this.TEXT6 = new TEXT(this)
+   with (this.TEXT6)
+      height = 1.0
+      left = 14.0
+      top = 23.0
+      width = 12.0
+      text = "Denumire:"
+   endwith
+
+   this.TEXT7 = new TEXT(this)
+   with (this.TEXT7)
+      height = 1.0
+      left = 57.0
+      top = 23.0
+      width = 12.0
+      text = "Cod:"
+   endwith
+
+   this.LISTVIEW2 = new LISTVIEW(this)
+   with (this.LISTVIEW2)
+      height = 15.0
+      left = 74.0
+      top = 17.5
+      width = 54.0
+      tileWidth = 70
+   endwith
+
+   this.TEXT8 = new TEXT(this)
+   with (this.TEXT8)
+      height = 1.0
+      left = 14.0
+      top = 26.5
+      width = 12.0
+      text = "Profesor:"
+   endwith
+
+   this.TEXT9 = new TEXT(this)
+   with (this.TEXT9)
+      height = 1.0
+      left = 56.0
+      top = 26.5
+      width = 7.0
+      text = "Credite:"
+   endwith
+
+   this.TEXT10 = new TEXT(this)
+   with (this.TEXT10)
+      height = 1.5
+      left = 14.0
+      top = 24.0
+      width = 39.0
+      border = true
+      colorNormal = "Black/White"
+      text = ""
+   endwith
+
+   this.TEXT11 = new TEXT(this)
+   with (this.TEXT11)
+      height = 1.5
+      left = 56.0
+      top = 24.0
+      width = 16.0
+      border = true
+      colorNormal = "Black/White"
+      text = ""
+   endwith
+
+   this.TEXT12 = new TEXT(this)
+   with (this.TEXT12)
+      height = 1.5
+      left = 14.0
+      top = 27.5
+      width = 39.0
+      border = true
+      colorNormal = "Black/White"
+      text = ""
+   endwith
+
+   this.TEXT13 = new TEXT(this)
+   with (this.TEXT13)
+      height = 1.5
+      left = 56.0
+      top = 27.5
+      width = 15.5714
+      border = true
+      colorNormal = "Black/White"
+      text = ""
+   endwith
+
+   this.TEXT14 = new TEXT(this)
+   with (this.TEXT14)
+      height = 1.5
+      left = 7.0
+      top = 8.5
+      width = 17.0
+      border = true
+      colorNormal = "Black/White"
+      text = ""
+   endwith
+
+   this.TEXT15 = new TEXT(this)
+   with (this.TEXT15)
+      height = 1.5
+      left = 27.0
+      top = 8.5
+      width = 17.0
+      border = true
+      colorNormal = "Black/White"
+      text = ""
+   endwith
+
+   this.TEXT16 = new TEXT(this)
+   with (this.TEXT16)
+      height = 1.5
+      left = 48.0
+      top = 8.5
+      width = 17.0
+      border = true
+      colorNormal = "Black/White"
+      text = ""
+   endwith
+
+
+   function PUSHBUTTON1_onClick
+      set talk off
+      clear
+		
+      use persoana.dbf in 1 index icods alias per
+		use fisa_note.dbf in 2 index icodsf alias fisa
+		use discipline.dbf in 3 index icodm alias discip
+
+		form.listview1 = new LISTVIEW(form)
+		with (form.LISTVIEW1)
+			height = 15.0
+			left = 74.0
+			top = 1.0
+			width = 54.0
+			tileWidth = 70
+		endwith
+
+      select per
+      set relation to Cod_student into fisa
+		
+		select fisa
+		set relation to Cod_materie into discip
+
+		select per
+		
+      val_cod = val(form.entryfield1.value)
+		? val_cod + 'str ' + str(val_cod)
+		seek trim(str(val_cod))
+		if eof()
+			msgbox('Studentul nu exista', 'Error', 1+48)
+			? 'Studentul nu exista'
+			return
+		endif
+		
+		form.text14.text=per->Nume
+		form.text15.text=per->Prenume
+		form.text16.text=per->Cod_student
+		
+		?'Studentul: '+Nume+' '+Prenume
+		?'Cod student: '+str(Cod_student,10)
+		
+	  select fisa
+	  
+	  seek trim(str(val_cod))
+	  if eof()
+	    arrayStud = new array()
+		 arraystud.add('Studentul nu are note')
+		 form.listview1.addItemsFromArray(arrayStud)
+		?'Studentul nu are note'
+		return
+	  endif
+	  
+		 
+      do while fisa->Cod_student=val_cod
+		 arrayStud = new array()
+		 arraystud.add(fisa->Nota)
+		 arraystud.add(discip->Cod_materie)
+		 arraystud.add(discip->Denumire)
+		form.listview1.addItemsFromArray(arrayStud)
+		? fisa->Nota,discip->Cod_materie,discip->Denumire
+		skip
+	  enddo
+	return
+
+	function PUSHBUTTON2_onClick1
+      set talk off
+      clear
+		
+      use persoana.dbf in 1 index icods alias per
+		use fisa_note.dbf in 2 index icodsf alias fisa
+		use discipline.dbf in 3 index icodm alias discip
+		
+      select per
+      set relation to Cod_student into fisa
+		
+		select fisa
+		set relation to Cod_materie into discip
+
+		select discip
+		
+		form.LISTVIEW2 = new LISTVIEW(form)
+		with (form.LISTVIEW2)
+			height = 15.0
+			left = 74.0
+			top = 17.5
+			width = 54.0
+			tileWidth = 70
+		endwith
+		
+      val_cod_mat = form.entryfield5.value
+		seek trim(val_cod_mat)
+		if eof()
+			msgbox('Materia nu exista', 'Error', 1+48)
+			? 'Materia nu exista'
+			return
+		endif
+		
+		form.text10.text = discip->Denumire
+		form.text11.text=discip->Cod_materie
+		form.text12.text=discip->Profesor
+		form.text13.text=discip->credite
+		
+		
+		select fisa
+		
+		hasGrades=.F.
+		
+		go 1 in 1
+		go 1 in 2
+		go 1 in 3
+		
+		nume_st = ""
+		prenume_st = ""
+		
+		do while not(eof(2))
+		
+			if fisa->Cod_materie = val_cod_mat
+				hasGrades=.T.
+				arrayNote = new array()
+				
+				do while not(eof(1))
+				
+					if per->Cod_student = fisa->Cod_student
+						nume_st = per->Nume
+						prenume_st = per->Prenume
+						exit
+					endif
+					
+					skip 1 in 1
+				enddo
+				
+				arrayNote.add(nume_st)
+				arrayNote.add(prenume_st)
+				arrayNote.add(fisa->Nota)
+				
+				form.listview2.addItemsFromArray(arrayNote)
+			endif
+			skip 1 in 2
+		enddo
+		
+	return
+
+endclass
+
