@@ -1,14 +1,14 @@
 set talk off
 clear
 
-use persoana.dbf
+/*use persoana.dbf
 INDEX ON Cod_student TO icods
 
 use fisa_note.dbf
 INDEX ON Cod_student TO icodsf
 
 use discipline.dbf
-INDEX ON Cod_materie TO icodm
+INDEX ON Cod_materie TO icodm*/
 
 use persoana.dbf in 1 index icods alias per
 use fisa_note.dbf in 2 index icodsf alias fisa
@@ -48,8 +48,14 @@ replace per->medie with suma_note/contor
 
 if per->medie>=8.5 and nr_credite>=25
 replace per->bursier with .T.
+else
+replace per->bursier with .F.
 endif
 
 skip 1 in 1
 enddo
+
+clear
+? "Medii si burse actualizate"
+
 return

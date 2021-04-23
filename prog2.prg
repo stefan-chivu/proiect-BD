@@ -54,4 +54,8 @@ endif
 
 skip 1 in 1
 enddo
+
+clear
+? "Medii si burse actualizate"
+
 return

@@ -1,4 +1,4 @@
-Project File generated 22/04/2021 19:30:34
+Project File generated 23/04/2021 11:50:32
 
 [Project]
 Name=
@@ -31,6 +31,11 @@ prog2.prg,0,0,0,
 getCredite.prg,0,0,0, 
 prog3.prg,0,0,0, 
 interface.wfm,0,0,0, 
+bursa.sql,0,0,0, 
+clasament_materii.sql,0,0,0, 
+clasament_medii.sql,0,0,0, 
+medie.sql,0,0,0, 
+studenti_promovati.sql,0,0,0, 
 
 [DEO]
 
@@ -125,3 +130,8 @@ Files2=Discipline.mdx >> DestDir: {app}
 Files3=Fisa_note.DBF >> DestDir: {app}
 Files4=Fisa_note.mdx >> DestDir: {app}
 Files5=Persoana.dbf >> DestDir: {app}
+Files6=bursa.sql >> DestDir: {app}
+Files7=clasament_materii.sql >> DestDir: {app}
+Files8=clasament_medii.sql >> DestDir: {app}
+Files9=medie.sql >> DestDir: {app}
+Files10=studenti_promovati.sql >> DestDir: {app}
